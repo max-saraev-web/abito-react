@@ -19,7 +19,6 @@ body {
   width: 100%;
   max-width: 1170px;
   padding: 0 12px;
-  border: 2px solid red;
   margin: 0 auto;
 }
 
@@ -41,16 +40,94 @@ body {
     font-display: swap;
 }
 
-/* .header {
+.header {
+  padding-top: 34px;
+}
 
-} */
+.header-logo {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo img {
+  width: 27px;
+  height: 27px;
+  margin-right: 6px;
+}
+
+.header-logo span {
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
 
 .header-box {
   display: flex;
   justify-content: space-between;
 }
+
+.header-controls__btn:not(:last-child) {
+  margin-right: 10px;
+}
 .header-burger {
+  width: 30px;
+  height: 19px;
   display: none;
+  background: url('../img/burger.svg') no-repeat center / cover;
+}
+
+.btn {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-outline {
+  color: var(--accent);
+  background-color: transparent;
+  padding: 10px 15px;
+  border: 1px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-outline:hover {
+  transition: all 0.3s ease-in-out;
+  border: 1px solid var(--main);
+}
+
+.btn-primary {
+  color: var(--light);
+  background-color: var(--main);
+  padding: 10px 15px;
+}
+
+.btn-xl {
+  padding: 19px 72px;
+}
+
+.btn:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .container {
+    max-width: 930px;
+  }
+  .btn-outline:hover {
+    border: 1px solid transparent;
+  }
+  .btn:hover {
+    cursor: default;
+  }
+}
+
+@media (max-width: 991px) {
+  .container {
+    max-width: 730px;
+  }
 }
 
 @media (max-width: 786px) {
