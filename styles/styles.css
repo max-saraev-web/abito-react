@@ -1,0 +1,68 @@
+:root {
+  --main: #256EEB;
+  --accent: #0A143A;
+  --grey: #C4C4C4;
+  --light: #FFFFFF;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, sans-serif;
+}
+
+
+.container { 
+  width: 100%;
+  max-width: 1170px;
+  padding: 0 12px;
+  border: 2px solid red;
+  margin: 0 auto;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Bold.woff2') format('woff2'),
+        url('../fonts/Roboto-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../fonts/Roboto-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* .header {
+
+} */
+
+.header-box {
+  display: flex;
+  justify-content: space-between;
+}
+.header-burger {
+  display: none;
+}
+
+@media (max-width: 786px) {
+  .container {
+    max-width: 100%;
+  }
+
+  .header-controls {
+    display: none;
+  }
+
+  .header-burger {
+    display: block;
+  }
+}
