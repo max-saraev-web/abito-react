@@ -198,10 +198,14 @@ body {
 }
 
 .card__img {
-  /* width: 264px; */
-  /* height: 178px; */
+  width: 264px;
+  height: 178px;
   border-radius: 10px;
+  overflow: hidden;
   margin-bottom: 12px;
+}
+
+.card__img img {
   object-fit: cover;
 }
 
@@ -322,7 +326,7 @@ body {
   gap: 30px;
 }
 .product__col-l {
-  flex-basis: 50%
+  flex-basis: 60%
 }
 .product__col-m {
   flex-basis: 50%

@@ -1,0 +1,58 @@
+const PRODUCTS_DB = [
+  {
+    href: '/page-product.html',
+    img: 'https://picsum.photos/265/180?random=1',
+    alt: 'Заглушка изображения объявления',
+    title: 'Пвх материал 1й сорт',
+    price: '170',
+    address: 'Казань, р-н Вахитовский',
+    published: '10 июля 11:39',
+  },
+  {
+    href: '/page-product.html',
+    img: 'https://picsum.photos/265/180?random=2',
+    alt: 'Заглушка изображения объявления',
+    title: 'ПВХ пленка 3й класс',
+    price: '170',
+    address: 'Казань, р-н Вахитовский',
+    published: '10 июля 11:39',
+  },
+  {
+    href: '/page-product.html',
+    img: 'https://picsum.photos/265/180?random=3',
+    alt: 'Заглушка изображения объявления',
+    title: 'Ткань Оксфорд 2й сорт',
+    price: '170',
+    address: 'Казань, р-н Вахитовский',
+    published: '10 июля 11:39',
+  },
+  {
+    href: '/page-product.html',
+    img: 'https://picsum.photos/265/180?random=4',
+    alt: 'Заглушка изображения объявления',
+    title: 'Полиэтилен вторичный высший',
+    price: '160',
+    address: 'Казань, р-н Вахитовский',
+    published: '10 июля 11:39',
+  },
+  {
+    href: '/page-product.html',
+    img: 'https://picsum.photos/265/180?random=5',
+    alt: 'Заглушка изображения объявления',
+    title: 'Сетка армирующая облегченная',
+    price: '150',
+    address: 'Казань, р-н Вахитовский',
+    published: '10 июля 11:39',
+  },
+  {
+    href: '/page-product.html',
+    img: 'https://picsum.photos/265/180?random=6',
+    alt: 'Заглушка изображения объявления',
+    title: 'Геотекстиль иглопробивной стандарт',
+    price: '140',
+    address: 'Казань, р-н Вахитовский',
+    published: '10 июля 11:39',
+  },
+];
+
+export default PRODUCTS_DB;

@@ -1,0 +1,25 @@
+{
+  "name": "abito-react",
+  "version": "1.0.0",
+  "scripts": {
+    "startParcel": "npx parcel *.html",
+    "watchParcel": "npx parcel watch *.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/max-saraev-web/abito-react.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/max-saraev-web/abito-react/issues"
+  },
+  "homepage": "https://github.com/max-saraev-web/abito-react#readme",
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.15.4"
+  }
+}
