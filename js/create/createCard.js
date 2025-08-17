@@ -10,8 +10,6 @@ const createCard = (href, img, title, price, address, date) => {
   picture.classList.add('card__img');
 
   const realPic = document.createElement('img');
-  realPic.src = img;
-  realPic.alt = 'Заглушка';
 
   const h5 = document.createElement('h5');
   h5.classList.add('card__title');
@@ -35,7 +33,23 @@ const createCard = (href, img, title, price, address, date) => {
   picture.append(realPic);
   cardInfo.append(spanAddress, spanPublished);
   card.append(picture, h5, strong, cardInfo);
-  return card;
+  return new Promise((resolve, reject) => {
+      realPic.addEventListener('load', () => {
+    console.log(`Картинка ${img} загрузилась!`);
+        resolve(card);
+  }
+  );
+  realPic.addEventListener('error', () => {
+    console.log(`Картинка ${img} НЕ загрузилась!!!`);
+    realPic.src = '../../img/card/notphoto.jpg';
+    reject(card);
+  }
+  );
+
+  realPic.src = img;
+  realPic.alt = 'Заглушка';
+  });
+  // return card;
 };
 
 export default createCard;

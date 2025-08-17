@@ -201,8 +201,10 @@ body {
   width: 264px;
   height: 178px;
   border-radius: 10px;
+  border: 1px solid red;
   overflow: hidden;
   margin-bottom: 12px;
+  text-align: center;
 }
 
 .card__img img {

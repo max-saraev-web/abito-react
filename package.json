@@ -18,8 +18,5 @@
     "url": "https://github.com/max-saraev-web/abito-react/issues"
   },
   "homepage": "https://github.com/max-saraev-web/abito-react#readme",
-  "description": "",
-  "devDependencies": {
-    "parcel": "^2.15.4"
-  }
+  "description": ""
 }
